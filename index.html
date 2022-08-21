@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              fontFamily: {
+                'readexPro': ['Readex Pro', 'sans-serif']
+              }
+            }
+          }
+        }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <section class="h-screen">
+    <div class=" h-1/3 bg-gradient-to-r from-blue-500 to-green-500 flex justify-center items-center">
+      <div class="avatar flex flex-col justify-center items-center p-5 rounded-lg">
+        <div class="w-24 rounded-full">
+          <img src="img/mario.JPG"/>
+        </div>
+        <h1 class="text-white text-xl mt-2">Mario Ríos Holgado</h1>
+        <h2 class="text-center text-lg">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h2>
+        <h3 class="text-center">Estudiante de Ingeniería de Computadores en UAH</h3>
+      </div>
+    </div>
+    <div class="p-5">
+      <h1 class="text-2xl">Lenguajes de Programación</h1>
+      <div class="mockup-window border bg-base-300 mt-4 items-center">
+        <div class="flex flex-wrap justify-center px-4 py-16 bg-base-200">
+          <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-20 h-20 border-2 rounded-full" alt="Testimonial avatar" src="img/java.png">
+            </div>
+            <h2 class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">Java</h2>
+            <p>Conocimientos medios de java, utilizando Android Studio o automatizaciones de QA con SpringBoot, Selenium y TestNG en Eclipse. Control de dependencias con Gradle y Maven.</p>
+            <progress class="progress progress-accent w-56" value="60" max="100"></progress>
+          </div>
+
+          <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-20 h-20 border-2 rounded-full" alt="Testimonial avatar" src="img/cplus.png">
+            </div>
+            <h2 class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">C/C++</h2>
+            <p>Conocimientos básicos de C/C++ en MSDOS, incluyendo interfaces gráficas en consola.</p>
+            <progress class="progress progress-accent w-56" value="50" max="100"></progress>
+          </div>
+
+          <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-20 h-20 border-2 rounded-full" alt="Testimonial avatar" src="img/html.png">
+            </div>
+            <h2 class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">HTML/CSS/JS/PHP</h2>
+            <p>Conocimientos avanzados de HTML y CSS, conocimientos intermedios de JavaScript y PHP.</p>
+            <progress class="progress progress-accent w-56" value="70" max="100"></progress>
+          </div>
+
+          <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-20 h-20 border-2 rounded-full" alt="Testimonial avatar" src="img/python.png">
+            </div>
+            <h2 class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">Python</h2>
+            <p>Conocimientos medios de Python y creación de servidores web con Flask.</p>
+            <progress class="progress progress-accent w-56" value="60" max="100"></progress>
+          </div>
+
+          <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-20 h-20 border-2 rounded-full" alt="Testimonial avatar" src="img/csharp.png">
+            </div>
+            <h2 class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">C#</h2>
+            <p>Conocimientos medios de C#. Implementación en creación de aplicaciones de escritorio de .NET con XAML y aplicaciones MVVM.</p>
+            <progress class="progress progress-accent w-56" value="65" max="100"></progress>
+          </div>
+
+          <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-20 h-20 border-2 rounded-full" alt="Testimonial avatar" src="img/visualbasic.png">
+            </div>
+            <h2 class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">Visual Basic</h2>
+            <p>Conocimientos medios de Visual Basic implementados en la creación de aplicaciones de .NET tanto con WinForms como XAML para la interfaz gráfica.</p>
+            <progress class="progress progress-accent w-56" value="65" max="100"></progress>
+          </div>
+
+          <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-20 h-20 border-2 rounded-full" alt="Testimonial avatar" src="img/swift.png">
+            </div>
+            <h2 class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">Swift/SwiftUI</h2>
+            <p>Conocimientos básicos en la creación de aplicaciones para el ecosistema Apple</p>
+            <progress class="progress progress-accent w-56" value="40" max="100"></progress>
+          </div>
+
+          <div class="max-w-md px-8 py-4 mx-auto mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+            <div class="flex justify-center -mt-16 md:justify-end">
+                <img class="object-cover w-20 h-20 border-2 rounded-full" alt="Testimonial avatar" src="img/qlik.png">
+            </div>
+            <h2 class="mt-2 text-2xl font-semibold text-gray-800 dark:text-white md:mt-0 md:text-3xl">QlikView</h2>
+            <p>Conocimientos básicos en el desarrollo de cuadros de mando y manipulación de datos.</p>
+            <progress class="progress progress-accent w-56" value="38" max="100"></progress>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>
