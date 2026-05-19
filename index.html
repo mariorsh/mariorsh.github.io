@@ -2,214 +2,95 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CV — Mario Ríos Holgado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B0D0A" />
+  <meta name="description" content="Mario Ríos Holgado — Android / Mobile Product Engineer focused on AI-native, local-first and on-device experiences." />
+  <title>Mario Ríos Holgado — AI-native Mobile Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Schibsted+Grotesk:wght@600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#6ee7b7}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,#031025 0%, #071330 100%);color:#e6eef6;line-height:1.5}
-    .container{max-width:1000px;margin:32px auto;padding:24px}
-    header{display:flex;flex-wrap:wrap;gap:20px;align-items:center}
-    .avatar{flex-shrink:0;width:90px;height:90px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#042027;font-size:24px}
-    h1{margin:0;font-size:26px}
-    .sub{color:var(--muted);font-size:14px;word-break:break-word}
-    .top-right{margin-left:auto;text-align:right;display:flex;flex-direction:column;gap:8px}
-    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;margin-top:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-    nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-    nav button{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 12px;border-radius:8px;cursor:pointer;flex:1 0 auto}
-    nav button.active{border-color:var(--accent);color:var(--accent)}
-    section{margin-top:14px}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
-    @media(max-width:880px){
-      .grid{grid-template-columns:1fr}
-      .top-right{margin-left:0;text-align:left;width:100%;align-items:flex-start}
-      header{flex-direction:column;align-items:flex-start}
-      .avatar{width:80px;height:80px}
+    :root{
+      --ink:#050604;--ink-2:#10140e;--paper:#fbfff5;--muted:#6a7563;--lime:#8CDC41;--lime-bright:#A8FF56;--lime-soft:#B8FF75;--mint:#DCFFBC;--forest:#336F46;--grape:#745AF1;--line:rgba(5,6,4,.12);--glass:rgba(251,255,245,.68);--shadow:0 34px 100px rgba(51,111,70,.18);
+      --ui:"DM Sans",system-ui,sans-serif;--display:"Schibsted Grotesk",system-ui,sans-serif;--statement:"Climate Crisis","Schibsted Grotesk",sans-serif;
     }
-    .list-item{margin-bottom:12px}
-    .role{font-weight:700}
-    .small{font-size:13px;color:var(--muted)}
-    .skill{display:inline-block;background:rgba(255,255,255,0.03);padding:6px 8px;margin:6px 6px 0 0;border-radius:999px;font-size:13px}
-    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
-    .controls{display:flex;gap:8px;flex-wrap:wrap}
-    .btn{background:var(--accent);border:none;color:#042027;padding:8px 12px;border-radius:8px;cursor:pointer;flex:1 0 auto}
-    a.link{color:var(--accent);text-decoration:none}
-    pre{white-space:pre-wrap;font-family:inherit}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--ui);color:var(--ink);background:radial-gradient(900px 700px at 88% 4%,rgba(168,255,86,.45),transparent 62%),radial-gradient(900px 700px at 7% 18%,rgba(220,255,188,.9),transparent 64%),linear-gradient(180deg,#fbfff5 0%,#ecffd8 48%,#dcffbc 100%);line-height:1.45;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:linear-gradient(rgba(5,6,4,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(5,6,4,.04) 1px,transparent 1px);background-size:64px 64px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.85),transparent 75%)}a{color:inherit}.wrap{width:min(1200px,calc(100% - 40px));margin:auto}.nav{position:sticky;top:16px;z-index:20;width:min(1200px,calc(100% - 28px));margin:16px auto 0;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 12px;border:1px solid rgba(255,255,255,.85);border-radius:999px;background:rgba(251,255,245,.58);backdrop-filter:blur(24px);box-shadow:0 16px 44px rgba(51,111,70,.12)}.brand{display:flex;gap:10px;align-items:center;text-decoration:none;font-family:var(--display);font-weight:900;letter-spacing:-.04em}.dot{width:14px;height:14px;border-radius:50%;background:var(--ink)}.links{display:flex;gap:4px}.links a,.pill-link{padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:800;font-size:14px}.links a:hover,.pill-link{background:var(--lime)}.hero{min-height:calc(100vh - 88px);display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:78px 0 86px}.eyebrow{color:var(--forest);font-weight:900;letter-spacing:.24em;text-transform:uppercase;font-size:12px}.hero h1{font-family:var(--display);font-size:clamp(60px,9vw,140px);line-height:.84;letter-spacing:-.07em;margin:20px 0}.hero h1 span{display:block;font-family:var(--statement);font-weight:400;font-size:.53em;letter-spacing:-.02em;color:var(--ink)}.lead{max-width:760px;color:rgba(5,6,4,.68);font-size:clamp(19px,2.1vw,25px)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 22px;border-radius:999px;text-decoration:none;font-weight:900;border:1px solid var(--line);background:rgba(255,255,255,.62);backdrop-filter:blur(16px)}.btn.primary{border-color:transparent;background:var(--lime);box-shadow:0 20px 60px rgba(51,111,70,.18)}.device{position:relative;min-height:640px;border-radius:58px;background:linear-gradient(180deg,rgba(255,255,255,.45),rgba(220,255,188,.88));border:1px solid rgba(5,6,4,.08);box-shadow:var(--shadow);overflow:hidden;transform:rotate(1.5deg)}.device:before{content:"LOCAL FIRST";position:absolute;top:42px;left:34px;font-family:var(--statement);font-size:56px;line-height:.86;letter-spacing:-.03em}.device:after{content:"AI";position:absolute;right:-16px;bottom:-38px;font-family:var(--display);font-size:260px;font-weight:900;line-height:.8;color:rgba(5,6,4,.055);letter-spacing:-.09em}.terminal{position:absolute;left:34px;right:34px;bottom:34px;border-radius:38px;padding:26px;background:rgba(5,6,4,.92);color:var(--paper);box-shadow:0 30px 80px rgba(0,0,0,.22)}.terminal .small{color:rgba(251,255,245,.55);font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.terminal h2{font-family:var(--display);font-size:39px;line-height:.94;letter-spacing:-.04em;margin:12px 0 18px}.cmd{font-family:var(--ui);display:grid;gap:8px;color:rgba(251,255,245,.8)}.cmd b{color:var(--lime-bright)}.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{padding:8px 11px;border-radius:999px;background:rgba(140,220,65,.22);font-weight:900;font-size:12px}.terminal .chip{background:rgba(140,220,65,.18);color:var(--lime-bright)}.section{padding:92px 0;border-top:1px solid rgba(5,6,4,.12)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:30px}.section h2{font-family:var(--display);font-size:clamp(43px,6vw,88px);line-height:.9;letter-spacing:-.06em;margin:12px 0 0}.section-head p{max-width:510px;color:rgba(5,6,4,.62);font-size:18px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{border-radius:34px;background:var(--glass);border:1px solid rgba(5,6,4,.08);box-shadow:0 18px 55px rgba(51,111,70,.10);padding:26px;backdrop-filter:blur(18px)}.card.dark{background:var(--ink);color:var(--paper)}.card.lime{background:var(--lime)}.card h3{font-family:var(--display);font-size:30px;line-height:.95;letter-spacing:-.04em;margin:18px 0 12px}.card p{color:rgba(5,6,4,.64);margin:0}.card.dark p{color:rgba(251,255,245,.68)}.icon{width:48px;height:48px;border-radius:17px;background:var(--lime);display:grid;place-items:center;font-weight:900}.projects{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.project{position:relative;min-height:335px;border-radius:38px;padding:30px;background:rgba(255,255,255,.62);border:1px solid rgba(5,6,4,.08);overflow:hidden;box-shadow:0 18px 55px rgba(51,111,70,.11)}.project.big{grid-row:span 2;background:linear-gradient(140deg,var(--ink),#1f2c1c);color:var(--paper);min-height:688px}.project .tag{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--forest);font-weight:900}.project.big .tag{color:var(--lime-bright)}.project h3{font-family:var(--display);font-size:clamp(38px,5vw,70px);line-height:.86;letter-spacing:-.06em;margin:20px 0 16px}.project p{max-width:620px;color:rgba(5,6,4,.64);font-size:17px}.project.big p{color:rgba(251,255,245,.70);font-size:19px}.project .orb{position:absolute;right:-60px;bottom:-70px;width:260px;height:260px;border-radius:50%;background:var(--lime);filter:blur(2px);opacity:.88}.project.big .orb{width:430px;height:430px;right:-170px;bottom:-160px;opacity:.35}.split{display:grid;grid-template-columns:.94fr 1.06fr;gap:22px}.timeline{display:grid;gap:14px}.role{padding:24px;border-radius:28px;background:rgba(255,255,255,.62);border:1px solid rgba(5,6,4,.08)}.role h3{font-family:var(--display);font-size:28px;letter-spacing:-.04em;margin:0 0 6px}.meta{font-weight:800;color:rgba(5,6,4,.55);font-size:14px}.role ul{margin:14px 0 0;padding-left:18px;color:rgba(5,6,4,.70)}.stack{display:flex;flex-wrap:wrap;gap:10px}.stack span{padding:11px 14px;border-radius:999px;background:rgba(255,255,255,.68);border:1px solid rgba(5,6,4,.08);font-weight:900}.quote{font-family:var(--display);font-size:clamp(42px,5vw,78px);line-height:.9;letter-spacing:-.06em;font-weight:900;margin:0}.quote span{font-family:var(--statement);font-weight:400;color:var(--forest);font-size:.82em}.certs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.cert{padding:18px;border-radius:24px;background:rgba(255,255,255,.55);border:1px solid rgba(5,6,4,.08);font-weight:900}.cert small{display:block;margin-top:6px;color:rgba(5,6,4,.55);font-weight:800}.contact{padding:96px 0 110px}.contact-card{position:relative;padding:52px;border-radius:54px;background:var(--ink);color:var(--paper);overflow:hidden}.contact-card:before{content:"NEXT?";position:absolute;right:-20px;top:24px;font-family:var(--statement);font-size:120px;color:rgba(140,220,65,.14);line-height:.8}.contact-card h2{position:relative;font-family:var(--display);font-size:clamp(48px,7vw,104px);line-height:.87;letter-spacing:-.07em;margin:0 0 18px}.contact-card p{position:relative;max-width:720px;color:rgba(251,255,245,.70);font-size:20px}.contact-card .btn{position:relative;background:var(--lime);border:0;color:var(--ink)}footer{padding:28px 0 56px;color:rgba(5,6,4,.56);font-weight:700}.mobile{display:none}@media(max-width:900px){.links{display:none}.mobile{display:inline-flex}.hero,.split,.projects{grid-template-columns:1fr}.hero{padding-top:58px}.device{min-height:480px;transform:none}.device:before{font-size:40px}.grid-4,.certs{grid-template-columns:1fr 1fr}.section-head{display:block}.project.big{min-height:460px}.contact-card{padding:34px}.contact-card:before{font-size:72px;top:auto;bottom:22px}}@media(max-width:560px){.wrap{width:min(100% - 28px,1200px)}.grid-4,.certs{grid-template-columns:1fr}.hero h1{font-size:58px}.terminal h2{font-size:30px}.nav{border-radius:28px}.brand{font-size:15px}.mobile{padding:9px 12px}.contact-card:before{display:none}}@media print{.nav,.actions,.device,.contact,footer{display:none}body{background:#fff}.section,.hero{padding:24px 0}.wrap{width:100%}}
   </style>
 </head>
 <body>
-  <div class="container" id="top">
-    <header>
-      <div class="avatar">MR</div>
+  <nav class="nav" aria-label="Navegación principal">
+    <a class="brand" href="#top"><span class="dot"></span>Mario Ríos</a>
+    <div class="links"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#stack">Stack</a><a href="#teaching">Teaching</a><a class="pill-link" href="mailto:mariorioshol@gmail.com">Contact</a></div>
+    <a class="pill-link mobile" href="mailto:mariorioshol@gmail.com">Contact</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero wrap">
       <div>
-        <h1>Mario Ríos Holgado</h1>
-        <div class="sub">Madrid, Spain • <a class="link" href="mailto:mariorioshol@gmail.com">mariorioshol@gmail.com</a></div>
+        <div class="eyebrow">Android · On-device AI · Local-first</div>
+        <h1>AI-native mobile <span>engineer</span></h1>
+        <p class="lead">Soy Mario Ríos Holgado, Android Developer en Madrid. Construyo experiencias móviles modernas con Kotlin, Jetpack Compose, arquitecturas local-first y una visión de producto centrada en IA on-device.</p>
+        <div class="actions"><a class="btn primary" href="#work">Ver proyectos</a><a class="btn" href="#experience">Experiencia</a><a class="btn" href="mailto:mariorioshol@gmail.com">mariorioshol@gmail.com</a></div>
       </div>
-      <div class="top-right">
-        <div class="small">Desarrollador Full‑Stack & Profesor</div>
-        <div class="controls">
-          <button class="btn" id="downloadPdf">Descargar CV (PDF)</button>
-          <button class="btn" id="printBtn">Imprimir</button>
-        </div>
-      </div>
-    </header>
-
-    <nav id="nav">
-      <button data-target="about" class="active">Sobre mí</button>
-      <button data-target="education">Formación</button>
-      <button data-target="experience">Experiencia</button>
-      <button data-target="skills">Habilidades</button>
-      <button data-target="certs">Certificaciones</button>
-      <button data-target="contact">Contacto</button>
-    </nav>
-
-    <div class="grid">
-      <main>
-        <section id="about" class="card">
-          <h3>Sobre mí</h3>
-          <p class="small">Desarrollador con experiencia en Java (apps web y SOAP), migraciones Android (Java → Kotlin, Jetpack Compose), y docente en desarrollo de aplicaciones y cloud. Me apasiona construir soluciones con buenas prácticas, UX y escalabilidad en la nube.</p>
-        </section>
-
-        <section id="education" class="card" style="display:none">
-          <h3>Formación</h3>
-          <div class="list-item">
-            <div class="role">Centro Profesional JOYFE — Certificate of Higher Education in Web Application Development</div>
-            <div class="small">Madrid, Spain • Septiembre 2023 – Junio 2024</div>
-            <div class="small">Módulo destacado: desarrollo completo de aplicaciones web y módulo Web3, blockchain y metaverso.</div>
-          </div>
-          <div class="list-item">
-            <div class="role">Centro Profesional JOYFE — Certificate of Higher Education in Multi‑Platform Application Development</div>
-            <div class="small">Madrid, Spain • Septiembre 2020 – Junio 2022</div>
-            <div class="small">Lenguajes: Java, C/C++, JavaScript, PHP, C#, Python, Kotlin; Cloud con AWS.</div>
-          </div>
-          <div class="list-item">
-            <div class="role">High School: IES Jaime Ferrán Clúa</div>
-            <div class="small">San Fernando de Henares, Madrid, Spain</div>
-          </div>
-        </section>
-
-        <section id="experience" class="card" style="display:none">
-          <h3>Experiencia</h3>
-
-          <div class="list-item">
-            <div class="role">AYESA — Java Web & Android Developer</div>
-            <div class="small">Madrid, Spain • December 2023 – Now</div>
-            <ul>
-              <li>Apps web con JSF y PrimeFaces (Java 8).</li>
-              <li>Servicios SOAP con Java 8.</li>
-              <li>Migración Android: Java → Kotlin y Jetpack Compose.</li>
-              <li>Stored procedures y SQL Server.</li>
-            </ul>
-          </div>
-
-          <div class="list-item">
-            <div class="role">Centro Profesional JOYFE — Profesor de Educación Superior</div>
-            <div class="small">Madrid, Spain • Septiembre 2024 – Now</div>
-            <ul>
-              <li>Profesor de Android (Kotlin y Jetpack Compose), Infraestructura Cloud (AWS Academy) y UX/UI con Figma.</li>
-            </ul>
-          </div>
-
-          <div class="list-item">
-            <div class="role">AYESA — Jira Developer & Administrator</div>
-            <div class="small">April 2023 – December 2023</div>
-            <ul><li>Configuración de Jira, workflows y automatizaciones con Scriptrunner y Groovy.</li></ul>
-          </div>
-
-          <div class="list-item">
-            <div class="role">AYESA — Big Data Administrator</div>
-            <div class="small">January 2023 – March 2023</div>
-            <ul><li>Automatización con scripts en Python para monitorización.</li></ul>
-          </div>
-
-          <div class="list-item">
-            <div class="role">Dars Telecom S.L. — Junior QA Developer</div>
-            <div class="small">January 2023 – March 2023</div>
-            <ul><li>Test automation con Java 8, Selenium, Spring y Maven.</li></ul>
-          </div>
-        </section>
-
-        <section id="skills" class="card" style="display:none">
-          <h3>Habilidades</h3>
-          <div class="small">Tecnológicas</div>
-          <div>
-            <span class="skill">Java / Java 8</span>
-            <span class="skill">Kotlin & Jetpack Compose</span>
-            <span class="skill">Android</span>
-            <span class="skill">JSF / PrimeFaces</span>
-            <span class="skill">HTML / CSS / JavaScript</span>
-            <span class="skill">Angular</span>
-            <span class="skill">PHP / Python</span>
-            <span class="skill">SQL Server</span>
-            <span class="skill">AWS (S3, EC2, RDS, DynamoDB)</span>
-            <span class="skill">Figma (UI/UX)</span>
-            <span class="skill">Selenium / QA</span>
-            <span class="skill">Shell scripting</span>
-          </div>
-          <div style="margin-top:12px" class="small">Idiomas: Inglés B2 (First Certificate — Cambridge)</div>
-        </section>
-
-        <section id="certs" class="card" style="display:none">
-          <h3>Certificaciones</h3>
-          <ul>
-            <li>Programming Essentials in Python — OpenEDG (July 2022)</li>
-            <li>Unity Certified User: Programmer — Unity (June 2022)</li>
-            <li>AWS Academy Cloud Foundations — AWS Academy (June 2022)</li>
-            <li>Oracle Academy — Java Fundamentals (2020–2021)</li>
-            <li>Oracle Academy — SQL - DP Database Programming (2021)</li>
-          </ul>
-        </section>
-
-        <section id="contact" class="card" style="display:none">
-          <h3>Contacto</h3>
-          <p class="small">Madrid, Spain</p>
-          <p class="small">Email: <a class="link" href="mailto:mariorioshol@gmail.com">mariorioshol@gmail.com</a></p>
-        </section>
-
-      </main>
-
-      <aside>
-        <div class="card">
-          <h4>Resumen rápido</h4>
-          <p class="small">Profesor y desarrollador con experiencia en backend Java, Android, migraciones a Kotlin y docencia en AWS y UX. Enfocado en calidad, automatización y buenas prácticas.</p>
-          <h4 style="margin-top:12px">Stack</h4>
-          <div class="small">Java • Kotlin • Android • JSF • SQL Server • AWS • HTML/CSS/JS</div>
-        </div>
-
-        <div class="card">
-          <h4>Disponibilidad</h4>
-          <p class="small">Disponible para proyectos de desarrollo y docencia. Contacta por email o teléfono.</p>
+      <aside class="device" aria-label="Resumen de especialización">
+        <div class="terminal">
+          <div class="small">Current focus</div>
+          <h2>Private, fast and offline-capable AI experiences.</h2>
+          <div class="cmd"><span><b>›</b> Kotlin + Jetpack Compose</span><span><b>›</b> Local LLMs / on-device execution</span><span><b>›</b> KMP + local-first sync</span></div>
+          <div class="chips" style="margin-top:18px"><span class="chip">Android</span><span class="chip">AI Product</span><span class="chip">UX Craft</span></div>
         </div>
       </aside>
-    </div>
+    </section>
 
-    <footer>
-      <small>Generado a partir de tu CV subido. Fuente: archivo CV MRH 2025.pdf.</small>
-    </footer>
-  </div>
+    <section class="section wrap">
+      <div class="section-head"><div><div class="eyebrow">01 · What I build</div><h2>No solo apps. Sistemas móviles inteligentes.</h2></div><p>El portfolio se apoya en tu CV 2026: Android moderno, local-first, local LLMs, KMP, backend escalable y sensibilidad UI/UX.</p></div>
+      <div class="grid-4">
+        <article class="card dark"><div class="icon">AI</div><h3>AI-native apps</h3><p>Experiencias móviles donde la IA no es un añadido, sino parte natural del flujo de usuario.</p></article>
+        <article class="card"><div class="icon">LF</div><h3>Local-first</h3><p>Apps preparadas para funcionar offline, sincronizar bien y sentirse rápidas incluso sin red.</p></article>
+        <article class="card lime"><div class="icon" style="background:var(--ink);color:var(--paper)">OS</div><h3>On-device AI</h3><p>Ejecución local para mejorar privacidad, latencia y continuidad de la experiencia.</p></article>
+        <article class="card"><div class="icon">UX</div><h3>Product craft</h3><p>Interfaz, arquitectura y producto trabajando juntos para que la tecnología se sienta simple.</p></article>
+      </div>
+    </section>
 
-  <script>
-    // Navegación simple
-    document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',e=>{
-      document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));
-      e.currentTarget.classList.add('active');
-      const target = e.currentTarget.dataset.target;
-      document.querySelectorAll('main section').forEach(s=>s.style.display = s.id===target ? 'block' : 'none');
-      window.location.hash = target;
-    }));
+    <section class="section wrap" id="work">
+      <div class="section-head"><div><div class="eyebrow">02 · Selected work</div><h2>Productos, no repos.</h2></div><p>Los proyectos se presentan como casos de producto: problema, experiencia, tecnología y criterio visual.</p></div>
+      <div class="projects">
+        <article class="project big"><div class="tag">Product · Fashion tech</div><h3>Dressing</h3><p>App de armario digital con identidad visual propia: lima, menta, glass, squircle cards y tono expresivo. La web toma esta identidad y la madura hacia un portfolio más premium.</p><div class="chips"><span class="chip">Brand system</span><span class="chip">Mobile UX</span><span class="chip">Product design</span></div><div class="orb"></div></article>
+        <article class="project"><div class="tag">Voice-first AI</div><h3>Chapa</h3><p>Asistente Android con interacción por voz, flujo conversacional y enfoque hands-free.</p><div class="orb"></div></article>
+        <article class="project"><div class="tag">Social planning</div><h3>Juntos</h3><p>Planes, restaurantes pendientes y salidas compartidas con foco en experiencia móvil cuidada.</p><div class="orb"></div></article>
+        <article class="project"><div class="tag">KMP · Fintech</div><h3>Gaston</h3><p>Concepto multiplataforma para ingresos, gastos y ahorro anual con estética fintech.</p><div class="orb"></div></article>
+        <article class="project"><div class="tag">Teaching · WPF</div><h3>Foodie Tracker</h3><p>Hackathon MVVM para reforzar ViewModels, RelayCommand, Pages, Frames y Styles.</p><div class="orb"></div></article>
+      </div>
+    </section>
 
-    // Inicializar desde hash
-    const hash = (location.hash||'#about').replace('#','');
-    const btn = document.querySelector('nav button[data-target="'+hash+'"]');
-    if(btn) btn.click();
+    <section class="section wrap" id="experience">
+      <div class="section-head"><div><div class="eyebrow">03 · Experience</div><h2>Android real, sistemas legacy y aula.</h2></div><p>Experiencia actualizada según tu CV 2026: TELYNET, AYESA, JOYFE y etapas previas técnicas.</p></div>
+      <div class="timeline">
+        <article class="role"><h3>TELYNET — Android Developer</h3><div class="meta">Madrid · Febrero 2026 — Actualidad</div><ul><li>Desarrollo y mantenimiento de aplicaciones Android con Java/XML y Kotlin + Jetpack Compose.</li><li>Migración de aplicaciones desde arquitecturas legacy hacia arquitecturas modernas.</li><li>Desarrollo de aplicaciones local-first.</li><li>Servicios SOAP con Java 8.</li></ul></article>
+        <article class="role"><h3>AYESA — Java Web & Android Developer</h3><div class="meta">Madrid · Diciembre 2023 — Febrero 2026</div><ul><li>Aplicaciones web con JSF, PrimeFaces y Java 8.</li><li>Servicios SOAP y stored procedures sobre SQL Server.</li><li>Migración Android de Java a Kotlin y Jetpack Compose.</li></ul></article>
+        <article class="role"><h3>Centro Profesional JOYFE — Higher Education Teacher</h3><div class="meta">Madrid · Septiembre 2024 — Actualidad</div><ul><li>Docencia en Android con Kotlin y Jetpack Compose.</li><li>Cloud Infrastructure con AWS Academy.</li><li>UX/UI con Figma aplicado a Android, Web y C# WPF .NET.</li></ul></article>
+        <article class="role"><h3>AYESA / Former Ibermática — Jira Developer & Big Data Administrator</h3><div class="meta">Madrid · Enero 2023 — Diciembre 2023</div><ul><li>Workflows, automatizaciones, Scriptrunner y Groovy.</li><li>Scripts Python para automatización y monitorización.</li></ul></article>
+      </div>
+    </section>
 
-    // Botones utilidad
-    document.getElementById('printBtn').addEventListener('click', ()=>window.print());
-    document.getElementById('downloadPdf').addEventListener('click', ()=>{
-      // Apunta al fichero subido al servidor (si lo despliegas junto al HTML). Ruta: /mnt/data/CV MRH 2025.pdf
-      const url = './CV%20MRH%202025.pdf';
-      window.open(url, '_blank');
-    });
-  </script>
+    <section class="section wrap" id="stack">
+      <div class="split">
+        <div class="card lime"><div class="eyebrow">04 · Positioning</div><p class="quote">Mobile engineer with <span>AI product</span> taste.</p><p style="margin-top:20px">Tu web deja de venderte como full-stack genérico y pasa a posicionarte como perfil Android/AI/local-first con capacidad de producto.</p></div>
+        <div class="card"><div class="eyebrow">Core stack</div><div class="stack" style="margin-top:20px"><span>Kotlin</span><span>Jetpack Compose</span><span>Android</span><span>Java/XML</span><span>KMP</span><span>SwiftUI basics</span><span>Local LLMs</span><span>Local-first</span><span>Java Spring</span><span>Python Flask</span><span>AWS</span><span>SQL Server</span><span>Angular</span><span>Tailwind CSS</span><span>Figma</span><span>Bash</span></div></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="teaching">
+      <div class="section-head"><div><div class="eyebrow">05 · Teaching & credentials</div><h2>Explicar también es diseñar.</h2></div><p>La docencia queda como diferencial: demuestra comunicación, criterio técnico y capacidad para ordenar conocimiento complejo.</p></div>
+      <div class="certs"><div class="cert">English B2<small>Cambridge FCE</small></div><div class="cert">AWS Academy<small>Cloud Foundations</small></div><div class="cert">Python<small>OpenEDG</small></div><div class="cert">Unity<small>Certified User</small></div><div class="cert">Oracle<small>Java & SQL</small></div></div>
+    </section>
+
+    <section class="contact wrap" id="contact">
+      <div class="contact-card"><h2>Let’s build the next mobile experience.</h2><p>Abierto a proyectos Android, Kotlin Multiplatform, AI-native mobile apps, local-first products y experiencias donde tecnología y diseño se sientan como una sola cosa.</p><div class="actions"><a class="btn" href="mailto:mariorioshol@gmail.com">Email</a><a class="btn" href="https://github.com/mariorsh" target="_blank" rel="noreferrer">GitHub</a><a class="btn" href="https://www.linkedin.com/in/mariorh/" target="_blank" rel="noreferrer">LinkedIn</a></div></div>
+    </section>
+  </main>
+
+  <footer class="wrap">© <span id="year"></span> Mario Ríos Holgado · Built with Dressing visual DNA.</footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
