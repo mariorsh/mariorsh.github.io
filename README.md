@@ -45,9 +45,11 @@ Voice-first AI assistant for Android, designed around natural interaction, speec
 
 ### Chinchin
 
-Social product concept focused on plans, moments and lightweight interactions.
+AI-powered drinking game for local multiplayer sessions.
 
-`Mobile Product` `UI/UX` `Visual Design`
+Players join a shared game and get dynamic questions, dares and challenges generated with AI, making every round different.
+
+`Kotlin` `Jetpack Compose` `AI` `Local Multiplayer` `Party Game`
 
 </td>
 <td width="50%">
@@ -56,15 +58,13 @@ Social product concept focused on plans, moments and lightweight interactions.
 
 ### Dressing
 
-Fashion-oriented digital experience focused on visual discovery, personal style and brand identity.
+Fashion-oriented digital product focused on outfits, wardrobes, personal style and visual discovery.
 
-`Frontend` `Product Design` `Branding`
+`Android` `Kotlin` `Product Design` `Fashion Tech`
 
 </td>
 </tr>
 </table>
-
----
 
 ## Stack
 
